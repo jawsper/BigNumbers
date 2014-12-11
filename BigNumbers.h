@@ -31,9 +31,10 @@ class BigNumbers
 {
   public:
     BigNumbers(LCD_CLASSNAME*);
-    void begin();
+	void begin();
     void clearLargeNumber(byte);
     void displayLargeNumber(byte, byte);
+	void displayLargeInt(int, byte, byte, bool);
   private:
     LCD_CLASSNAME* _lcd;
 
