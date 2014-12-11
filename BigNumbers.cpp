@@ -108,11 +108,12 @@ byte lowerEnd[8] =
   B01111
 };
 
-BigNumbers::BigNumbers(serLCD* lcd)
+BigNumbers::BigNumbers(LCD_CLASSNAME* lcd)
 {
   _lcd = lcd;
 }
-void BigNumbers::init()
+
+void BigNumbers::begin()
 {
   _lcd->createChar(0,leftSide);
   _lcd->createChar(1,upperBar);
